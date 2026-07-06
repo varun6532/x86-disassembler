@@ -1,6 +1,18 @@
 #include <stdio.h>
+void printBanner()
+{
+	printf("=========================================\n");
+	printf("  __  ___ __  ____  _                    \n");
+	printf("  \\ \\/ / |__ / / |__| |                  \n");
+	printf("   >  <   / /  \\   /                      \n");
+	printf("  /_/\\_\\ /_/    \\_/                        \n");
+	printf("        DISASSEMBLER\n");
+	printf("=========================================\n\n");
+}
+
 int main()
 {
+	printBanner();
 	FILE* file = fopen("notepad.exe", "rb");
 	if (file == NULL)
 	{
